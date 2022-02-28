@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- internal -->
+	<title> CSS</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		h1{
+			font-weight:bolder; 
+			margin:0px;
+
+		}
+		body {
+			background-color: gray;
+			/*background-image: url();?*/
+			/*background-size: 30px 30px;*/
+			margin:0px;
+		}
+		#mycustomtext{
+			font-size: 50px;
+			color: red;
+			text-align: center;
+		}
+		.class1{
+			border:solid 3px yellow;
+		}
+		.class2{
+			height: 30px;
+			width: 90px;
+		}
+		.class3{
+			box-shadow: 13px 13px white;
+		}
+		.m-b-5{
+			margin-bottom: 5px;
+		}
+		.classimg{
+			background-image: url('./image/wa/Tulips.jpg');
+			background-size:90px 30px;
+			background-repeat: no-repeat;
+		}
+		.divsize{
+			width: 100%;
+			height: 300px;
+		
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			padding-top: 20%;
+
+			
+		}
+		.divsize h1{
+			text-align: center;
+		}
+		.divsize p{
+			text-align: justify;
+			columns: 2;
+			margin: 15px;
+
+		}
+
+		#Home{
+			background-color: violet;
+
+		}
+		#About{
+			background-color: white;
+			overflow: all;
+
+		}
+		#Contact{
+			background-color:turquoise;
+		}
+		#imagebout{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			height: 150px;
+
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			border: 1px solid #e7e7e7;
+			background-color: #f3f3f3;
+
+		}
+		li{
+			float:left;
+		}
+		li a {
+			display: block;
+			color: #666;
+			text-align: center;
+			padding:14px 16px;
+			text-decoration: none;
+
+		}
+		li a:hover:not(.active){
+			background-color: #ddd;
+
+		}
+		li a.active{
+			color: white;
+			background-color: turquoise;
+
+		}
+		#squarediv{
+			height: 60px;
+			width: 60px;
+			background-color: black;
+			/*transform: translate(50px,100px);*/
+			/*transform: rotate(60deg);*/			
+			/*transform: scale(.5,2);*/
+			/*transform: skewX(20deg);*/
+			/*transition: 3s;*/
+			animation-name: anim;
+			animation-duration: 8s;
+			animation-iteration-count: infinite;
+			/*animation-direction: ;*/
+			/*use for direction alterate,reverse,reverse alternate*/
+
+
+					}
+		#squarediv:hover{
+			/*transform: rotate(60deg);*/
+			/*transform: translate(50px,100px);*/
+		}
+		@keyframes anim{
+			 0%{transform: translate(0px,0px);}
+			10%{transform: translate(20px,0px);}
+			20%{transform: translate(20px,40px);}
+			30%{transform: translate(60px,60px); background-color: pink;}
+			40%{transform: rotate(1120deg);}
+			50%{transform: translate(40px,40px);}
+			60%{transform: translate(20px,20px);}
+			70%{transform: translate(20px,0px);background-color: red;}
+			80%{transform: translate(-10px,0px);}
+			90%{transform: translate(-110px,0px);}
+			
+
+
+
+
+
+		}
+
+
+	</style>
+</head>
+<body>
+<ul class="horizontal gray" >
+	<li><a class="active" href="#Home">Home</a></li>
+	<li><a href="#About">About</a></li>
+	<li><a href="#Contact">Contact</a></li>
+	<li class="rightli" style="float:right;"> <a href="javascript:void(0)">Login</a></li>
+</ul>
+	<!-- 3 types of css 
+	inline - <h1 style="Color:red;">hello earth</h1>
+internal - <style> h1{color:red;}</style>
+external - <link rel="stylesheet" href="style.css" 
+******************
+selectors - html tag, id and class-->
+
+<!-- <h1 style="Color:blue">hello earth</h1>
+inline
+<h1> hello earth</h1>
+<h1 id="mycustomtext" class="m-b-5">hello earth</h1>
+<div class="class1 class2 ">asd</div>
+<div class="class1 class2 class3 classimg">dsa</div> -->
+
+<!-- margin out side padding inside -->
+
+<div id="Home" class="divsize">
+	<h1>Home</h1>
+		<div id="squarediv">
+			</div>
+				</div>
+<div id="About" class="divsize"><h1>About</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<img src="./image/wa/Tulips.jpg" id="imagebout" ></div>
+<div id="Contact" class="divsize" ><h1>Contact</
+h1></div>
+</body>
+</html>

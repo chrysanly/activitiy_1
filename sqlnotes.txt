@@ -1,0 +1,8 @@
+SELECT SUM(age) FROM 'students'
+SELECT AVG(age) FROM 'students'
+SELECT COUNT(id) FROM 'students'
+SELECT MAX(AGE >18) FROM 'students'
+SELECT if (age > 18,"can enter", "minor not allowed") AS entersite FROM students WHERE id=8
+SELECT if (age > 18,"can enter", "minor not allowed") AS entersite,AGE AS AGEOFUSER FROM students WHERE id=8
+SELECT * FROM `students` ORDER by age  ASC limit 5
+DELETE FROM `students` WHERE 'id'=1

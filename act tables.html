@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>column</title>
+</head>
+<table border="1" width="100%">
+	<tr bgcolor="blue">
+		<td 
+align="center"	colspan="3"> student information
+
+</td>
+	</tr>
+	
+	<tr bgcolor="yellow"><td rowspan="2">2</td>
+		<td>3</td>
+		<td>4</td>
+
+	</tr>
+	<tr>
+<td>5
+	
+</td>
+<td>
+	6
+</td>
+
+	</tr>
+	<tr>
+		<td colspan="2">7</td>
+		<td>8
+			
+		</td>
+	</tr>
+</table>
+
+<div style="border: solid;black"
+>
+	hello
+</div>
+<div>
+	world
+</div>
+<span>
+	hello
+</span>
+<span>
+	world
+</span>
+<form>
+	firstname: <br>
+	<input type="text" placeholder="firstname" name="Fname" required=""><br>
+	middlename: <br>
+	<input type="text" name="Mname" placeholder="middlename" required=""><br>
+	lastname:<br>
+	<input type="text" name="Lname" placeholder="lastname" required=""><br>
+	gender:<br>
+	<input type="radio" name="gender" value="male">male<br>
+	<input type="radio" name="gender" value="Female">Female<Br>
+	<input type="radio" name="gender" value="Others">Others<br>
+	skill: <br>
+	<input type="checkbox" name="skill" value="html5">html5<br>
+	<input type="checkbox" name="skill" value="css3">css3<br>
+	<input type="checkbox" name="skill" value="js">js<br>
+	<input type="checkbox" name="skill" value="php">php<br>
+	age:<br>
+	<input type="number" min="15" max="74"><br>
+	date of birth:<br>
+	<input type="date" name="dob" id="" max="2000-01-01"><br>
+	Ulam list:<br>
+	<select name="Ulam" id="" multiple>
+		<option value="adobo">adobo</option>
+		<option value="sinigang">sinigang</option>
+		<option value="maisbaka">maisbaka</option>
+		<option value="NACL">NACL</option>
+
+	</select>
+<br>
+<textarea name="comments" id="" cols="30" rows="10">the pen is on the table....
+</textarea><br>
+	<input list="browsers" style="margin-bottom: 50px">
+	<datalist id="browsers">
+		<option value="Internet explorer">
+		<option value="google chrome">
+			<option value="fire fox">
+				<option value="opera">
+					<option value="Safari">
+				<option value="onion">
+					<option value="edge">
+
+	</datalist>
+	<br>
+	<button type="button" onclick="alert('hello world')">alert me</button>
+	<br>
+
+	<input type="submit">
+</form>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+	<fieldset>
+		<legend>Ouput demo</legend>
+		0
+		<input type="range" id="a" name="a" value="50">
+		100 +
+		<input type="number" id="b" name="b" value="50">
+		=
+		<output name="x" for="a b"></output>
+		<br><br>
+		<input type="submit">
+
+
+	</fieldset>
+</form>
+<form>
+	Email:
+	<input type="Email" name="" id=""><br>
+	Password:
+	
+	
+	
+	<input type="Password" name=""><br>
+	<input type="reset" value="Clear">
+	<input type="submit" value="Login">
+	</form>	
+	<video controls height="1500" width="1500">
+		<source src="./video/Shelter.mp4" type="video/mp4">
+		<source src="./video/Shelter.mp4" type="video/avi">
+		<source src="./video/Shelter.mp4" type="video/3gp">
+		file type not supported
+	</video>
+	<br>
+	<audio controls>
+		<source src="./audio/maou.mp3" type="audio/mp3">
+		<source src="./audio/maou.mp3" type="audio/avi">
+		<source src="./audio/maou.mp3" type="audio/3gp">
+		file not supported
+	</audio>
+	<!-- for youtube  share then embed then copy -->
+				
+</html>
+<!-- block level element use to divide column command is <div> -->
+<!-- and  -->
+<!-- in line level<span> -->

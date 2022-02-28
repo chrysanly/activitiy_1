@@ -1,0 +1,11 @@
+echo
+<?php 
+?>
+
+
+<a><?php
+
+
+
+
+create view
